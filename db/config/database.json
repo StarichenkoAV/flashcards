@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "dev",
-    "password": "db",
-    "database": "flashcards",
-    "host": "172.19.96.245",
+    "username": "postgres",
+    "password": "123456",
+    "database": "flashcards2",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
