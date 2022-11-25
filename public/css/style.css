@@ -1,7 +1,8 @@
 body {
   text-align: center;
   color: rgb(48, 48, 48);
-  /* padding-top: 50px; */
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -9,14 +10,32 @@ h2 {
 }
 
 .cards-container {
-  margin: 0 10%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
 
-.card {
-  background-image: linear-gradient(#dfdfdf, #f5f5f5)
+.card-container {
+  border: 1px solid #0dcaf0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-1 {
+  background-image: url("https://school.techrocks.ru/wp-content/uploads/2020/09/silicon-valley-600x400-1.jpg");
+  background-size: contain;
+}
+
+.card-2 {
+  background-image: url("https://otus.ru/journal/wp-content/uploads/2020/12/6-2.png");
+  background-size: contain;
+}
+
+.card-3 {
+  background-image: url("https://mmo13.ru/download/content/201501/image_54afebba7719c2.41400146.jpg");
+  background-size: contain;
 }
 
 .card-body {
@@ -32,8 +51,11 @@ h2 {
   font-size: 18px;
 }
 
+.btn-info {
+  margin-top: 130px;
+}
+
 .count-container {
-  
   display: flex;
   flex-direction: row;
   font-size: 30px;
@@ -58,32 +80,28 @@ h2 {
   min-width: 500px;
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .nav-link {
-    font-size: 40px;
-    color: white;
-  }
+.nav-link {
+  font-size: 40px;
+  color: white;
+}
 
-  .card-body-q {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
+.card-body-q {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 
-  .btn-submit {
-    width: 200px;
-  }
+.btn-submit {
+  width: 200px;
+}
 
-  .form-control {
-    max-width: 80%;
-  }
+.form-control {
+  max-width: 80%;
+}
 
-  .right-answer {
-    margin-top: 10px;
-  }
-  
-  
-
-  
+.right-answer {
+  margin-top: 10px;
+}
