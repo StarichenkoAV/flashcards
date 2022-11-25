@@ -1,11 +1,12 @@
-const React = require('react')
+const React = require('react');
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
 	return (
 		<html lang="en">
 			<head>
 				<meta charSet="UTF-8" />
 				<title>Title</title>
+				<script />
 			</head>
 			<body>
 				{children}
@@ -14,4 +15,4 @@ const Layout = ({ children }) => {
 	);
 }
 
-module.exports = Layout
+module.exports = Layout;
