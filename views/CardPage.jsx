@@ -27,6 +27,9 @@ function CardPage({ quizzes }) {
             <div id="count-answer">0</div>
             <div> /7</div>
           </div>
+          <a className="nav-link" href="/" style={{ color: 'blue', fontSize: '30px' }}>
+            На главную
+          </a>
         </div>
       </div>
       <script defer src="/js/cardPage.js" />
