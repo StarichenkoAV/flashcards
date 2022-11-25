@@ -1,4 +1,5 @@
 const React = require('react');
+const NavBar = require('./NavBar');
 
 function Layout({ children }) {
   return (
@@ -18,6 +19,7 @@ function Layout({ children }) {
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
       </head>
       <body>
+        <NavBar />
         {children}
       </body>
     </html>

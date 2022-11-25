@@ -15,7 +15,7 @@ router.post('/:topic', async (req, res) => {
   const rightAnswer = await Quiz.findOne({ where: { id: req.params.topic } });
   //console.log(rightAnswer.answer);
   if (answer.toLowerCase() === rightAnswer.answer.toLowerCase()) {
-    return res.json({ status: true, message: 'Правильно' });
+    return res.json({ status: true, message: 'Верно!' });
   }
   return res.json({ status: false, message: 'Ответ неверный' });
 });
