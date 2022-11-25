@@ -2,9 +2,13 @@ require('@babel/register');
 const express = require('express');
 const expressConfig = require('./config/express');
 
+const Layout = require('./views/Layout');
+
 const topicsRouter = require('./routes/topicRouter');
+const cardRouter = require('./routes/cardRouter');
 
 const app = express();
+app.use('/cards', cardRouter);
 
 expressConfig(app);
 
