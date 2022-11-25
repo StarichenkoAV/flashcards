@@ -5,13 +5,13 @@ module.exports = {
   async up() {
     await Topic.bulkCreate([
       {
-        title: 'nana',
+        title: 'Угадываем сериал по кадру',
       },
       {
-        title: 'lala',
+        title: 'Языки программирования',
       },
       {
-        title: 'vava',
+        title: 'Угадываем игру по кадру',
       },
     ]);
   },

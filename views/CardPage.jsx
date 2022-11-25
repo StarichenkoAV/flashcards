@@ -13,10 +13,10 @@ function CardPage({ quizzes }) {
               id={quiz.id}
             >
               <div className="js-answer card" style={{ width: '18rem' }}>
-                <div className="card-body">
+                <div className="card-body-q">
                   <img src={quiz.image} className="card-img-top" alt="..." />
-                  <input type="text" className="form-control" name="answer" placeholder="answer" />
-                  <button type="submit" className="btn btn-outline-secondary">ok</button>
+                  <input type="text" className="form-control" name="answer" placeholder="Введите ваш ответ" autoComplete="off" />
+                  <button type="submit" className="btn btn-outline-secondary btn-submit ">Ответить</button>
                 </div>
                 <p className="right-answer" />
               </div>
@@ -25,7 +25,7 @@ function CardPage({ quizzes }) {
           <div className="count-container">
             <div> Ваш результат:&nbsp; </div>
             <div id="count-answer">0</div>
-            <div> /10</div>
+            <div> /7</div>
           </div>
         </div>
       </div>
