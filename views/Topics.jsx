@@ -1,5 +1,5 @@
-const React = require('react');
-const Layout = require('./Layout');
+ const React = require('react');
+ const Layout = require('./Layout');
 
 function Topics({ topics }) {
   return (
@@ -20,4 +20,4 @@ function Topics({ topics }) {
   );
 }
 
-module.exports = Topics;
+ module.exports = Topics;
