@@ -1,8 +1,6 @@
 body {
   text-align: center;
   color: rgb(48, 48, 48);
-  display: flex;
-  flex-direction: column;
 }
 
 h2 {
@@ -13,7 +11,9 @@ h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .card-container {
@@ -23,19 +23,20 @@ h2 {
   flex-direction: column;
 }
 
+.card {
+  background-size: cover;
+}
+
 .card-1 {
   background-image: url("https://school.techrocks.ru/wp-content/uploads/2020/09/silicon-valley-600x400-1.jpg");
-  background-size: contain;
 }
 
 .card-2 {
   background-image: url("https://otus.ru/journal/wp-content/uploads/2020/12/6-2.png");
-  background-size: contain;
 }
 
 .card-3 {
   background-image: url("https://mmo13.ru/download/content/201501/image_54afebba7719c2.41400146.jpg");
-  background-size: contain;
 }
 
 .card-body {
@@ -66,6 +67,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 0;
 }
 
 .js-card {
@@ -76,7 +78,6 @@ h2 {
 }
 
 .js-answer {
-  /* max-height: 550px; */
   min-width: 500px;
   display: flex;
   flex-direction: column;
